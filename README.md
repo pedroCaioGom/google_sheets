@@ -1,0 +1,1 @@
+Filtro para coletar informações do GooglePlanilhas

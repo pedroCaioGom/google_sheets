@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-sheets"
+version = "0.0.1"
+authors = [
+  { name="Pedro Caio", email="pedrocaiosousa9@gmail.com" },
+]
+description = "Integração com Logger e envio para Slack"
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "googleapis-common-protos", "google-api-core",
+    "google-api-python-client", "google-auth",
+    "google-auth-httplib2"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+license = {text = "MIT"}
+
+[project.urls]
+Homepage = "https://github.com/pedroCaioGom/integracao_slack"
+Issues = "https://github.com/pedroCaioGom/integracao_slack/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
